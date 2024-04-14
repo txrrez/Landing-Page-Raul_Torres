@@ -1,0 +1,61 @@
+body{
+    font-family: Roboto, sans-serif;
+}
+
+.navbar{
+    background-color: #4c41e1;
+}
+
+#cabecalho .nav .nav-link.active{
+    background-color: #fff;
+    color: #4c41e1;
+}
+
+#cabecalho .nav .nav-link, 
+.navbar-brand,
+.navbar-brand:hover, 
+.nav-menu .nav-link.active:hover{
+    color: #fff;
+}
+
+.navbar-toggler{
+    background-color: #a4cce7;
+}
+
+.section-title{
+    font-family: Pacifico, cursive;
+}
+
+#sobre-o-site, #jogos{
+    background-color: #a4cce7;
+}
+
+.text-colored{
+    color: #4c41e1;
+}
+
+.nav-menu .nav-link.active,
+#fale-conosco button{
+    background-color: #4c41e1;
+    color: #fff;
+}
+
+
+.nav-menu .nav-link:hover{
+    color: #4c41e1;
+}
+
+.social-links li{
+    list-style: none;
+    display: inline;
+}
+
+.social-links a{
+    text-decoration: none;
+}
+
+@media (max-width: 767px){
+    .carousel-item img{
+        height: 400px;  
+    }
+}
