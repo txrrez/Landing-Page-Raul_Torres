@@ -41,6 +41,11 @@ header .section-title {
     color: #0e0863;
 }
 
+.text-coloredE{
+    color: rgb(0, 0, 0);
+    font-style: italic;
+}
+
 .nav-menu .nav-link.active,
 #fale-conosco button{
     background-color: #4c41e1;
@@ -68,5 +73,6 @@ header .section-title {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
     transition: box-shadow 0.1s ease-in-out;
 }
+
 
 
