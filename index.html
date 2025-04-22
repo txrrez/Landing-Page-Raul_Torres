@@ -94,7 +94,7 @@
                                         <i class="bi bi-mortarboard-fill me-1"></i>Ebac 
                                     </a>
                                 </li>
-                                <li> Vendedor E-commerce <br>
+                                <li> Analista E-commerce <br>
                                     <a href="https://www.mercadolivre.com.br/" aria-label="Acessar site do Mercado Livre" class="text-coloredE fw-bold text-decoration-none link-hover" target="_blank">
                                         <i class="bi bi-bag me-1"></i>Meli
                                     </a>
@@ -345,6 +345,29 @@
             } else {
                 header.classList.remove('shadow-scroll');
             }
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        const navLinks = document.querySelectorAll('#menu-navegacao .nav-link');
+        const navbarCollapse = document.getElementById('menu-navegacao');
+    
+        navLinks.forEach(function(link) {
+            link.addEventListener('click', function () {
+            if (window.innerWidth < 992) { // aplica só em telas menores (mobile)
+                new bootstrap.Collapse(navbarCollapse).hide();
+            }
+            });
+        });
+    
+        // Opcional: fecha se clicar fora do menu
+        document.addEventListener('click', function (event) {
+            const isClickInside = navbarCollapse.contains(event.target) || event.target.classList.contains('navbar-toggler');
+            if (!isClickInside && window.innerWidth < 992 && navbarCollapse.classList.contains('show')) {
+            new bootstrap.Collapse(navbarCollapse).hide();
+            }
+        });
         });
     </script>
 
